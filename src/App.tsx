@@ -1,16 +1,24 @@
-import { createTheme } from "@mui/system";
+import { CssBaseline } from "@mui/material";
 import { Header } from "./components/Header";
-
-const theme = createTheme({
-  typography: {
-    fontFamily: ["Popppins", "sans-serif"].join(","),
-  },
-});
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import "./App.css";
+import { Hero } from "./components/Hero";
+import { Footer } from "./components/Footer";
 
 function App() {
+  const CustomFontTheme = createTheme({
+    typography: {
+      fontFamily: "Poppins, Arial, sans-serif",
+    },
+  });
   return (
     <>
-      <Header></Header>
+      <ThemeProvider theme={CustomFontTheme}>
+        <CssBaseline></CssBaseline>
+        <Header></Header>
+        <Hero></Hero>
+        <Footer></Footer>
+      </ThemeProvider>
     </>
   );
 }
