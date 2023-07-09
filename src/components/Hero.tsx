@@ -1,10 +1,10 @@
-import { Box, Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 export const Hero = () => {
   return (
     <>
-      <Box
+      <Container
         sx={{
           bgcolor: "#2F303A",
           height: "90vh",
@@ -29,7 +29,7 @@ export const Hero = () => {
         >
           Join Now
         </Button>
-      </Box>
+      </Container>
     </>
   );
 };

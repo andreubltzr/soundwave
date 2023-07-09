@@ -29,6 +29,7 @@ export const Header = () => {
           justifyContent: "space-between",
           bgcolor: "#2F303A",
           height: "10vh",
+          px: "1.5rem",
         }}
       >
         <Box sx={{ display: "flex", gap: 1 }}>
