@@ -15,7 +15,9 @@ export const Header = () => {
     <List sx={{ display: "flex", gap: 1 }}>
       {navItems.map((item) => (
         <ListItem key={item} sx={{ p: 1 }}>
-          <ListItemButton sx={{ p: 0 }}>{item}</ListItemButton>
+          <ListItemButton disableRipple sx={{ p: 0 }}>
+            {item}
+          </ListItemButton>
         </ListItem>
       ))}
     </List>

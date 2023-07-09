@@ -11,6 +11,7 @@ function App() {
       fontFamily: "Poppins, Arial, sans-serif",
     },
   });
+
   return (
     <>
       <ThemeProvider theme={CustomFontTheme}>
