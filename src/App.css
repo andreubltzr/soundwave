@@ -13,3 +13,40 @@
 #root {
   color: white;
 }
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.circle-red::before,
+.circle-blue::before,
+.circle-green::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.circle-red {
+  background-color: #303047;
+  top: 10%;
+  left: 25%;
+}
+
+.circle-blue {
+  background-color: #412c41;
+  top: 80%;
+  left: 10%;
+}
+
+.circle-green {
+  background-color: #303047;
+  top: 65%;
+  left: 70%;
+}

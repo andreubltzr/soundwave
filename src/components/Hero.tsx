@@ -15,6 +15,9 @@ export const Hero = () => {
           px: "1.5rem",
         }}
       >
+        <div className="circle circle-red"></div>
+        <div className="circle circle-blue"></div>
+        <div className="circle circle-green"></div>
         <Typography variant="h1" fontSize={50}>
           Feel the music
         </Typography>
