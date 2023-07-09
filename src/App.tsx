@@ -6,7 +6,7 @@ import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 
 function App() {
-  const CustomFontTheme = createTheme({
+  const theme = createTheme({
     typography: {
       fontFamily: "Poppins, Arial, sans-serif",
     },
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <ThemeProvider theme={CustomFontTheme}>
+      <ThemeProvider theme={theme}>
         <CssBaseline></CssBaseline>
         <Header></Header>
         <Hero></Hero>
