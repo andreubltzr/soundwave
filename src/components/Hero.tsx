@@ -1,4 +1,4 @@
-import { Button, Container } from "@mui/material";
+import { Box, Button, Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 export const Hero = () => {
@@ -15,9 +15,9 @@ export const Hero = () => {
           px: "1.5rem",
         }}
       >
-        <div className="circle circle-red"></div>
-        <div className="circle circle-blue"></div>
-        <div className="circle circle-green"></div>
+        <Box className="circle circle-red"></Box>
+        <Box className="circle circle-blue"></Box>
+        <Box className="circle circle-green"></Box>
         <Typography variant="h1" fontSize={50}>
           Feel the music
         </Typography>
