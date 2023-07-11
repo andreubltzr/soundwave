@@ -4,6 +4,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./App.css";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import { Discover } from "./components/Discover";
+import { Join } from "./components/Join";
 
 function App() {
   const theme = createTheme({
@@ -15,10 +18,14 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <CssBaseline></CssBaseline>
-        <Header></Header>
-        <Hero></Hero>
-        <Footer></Footer>
+        <CssBaseline />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Hero />}></Route>
+          <Route path="/Discover" element={<Discover />}></Route>
+          <Route path="/Join" element={<Join />}></Route>
+        </Routes>
+        <Footer />
       </ThemeProvider>
     </>
   );

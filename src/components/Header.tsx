@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import logo from "../assets/logo.png";
 import { Box } from "@mui/system";
+import { Link } from "react-router-dom";
 
 const navItems = ["Discover", "Join"];
 
@@ -16,7 +17,15 @@ export const Header = () => {
       {navItems.map((item) => (
         <ListItem key={item} sx={{ p: 1 }}>
           <ListItemButton disableRipple sx={{ p: 0 }}>
-            {item}
+            <Link
+              to={`/${item}`}
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              {item}
+            </Link>
           </ListItemButton>
         </ListItem>
       ))}
@@ -34,12 +43,19 @@ export const Header = () => {
           px: "1.5rem",
         }}
       >
-        <Box sx={{ display: "flex", gap: 1 }}>
-          <Box component="img" src={logo} sx={{ height: 35, width: 35 }}></Box>
-          <Typography variant="h6" sx={{}}>
-            Soundwave
-          </Typography>
-        </Box>
+        <Link
+          to="/"
+          style={{ textDecoration: "none", color: "white", cursor: "pointer" }}
+        >
+          <Box sx={{ display: "flex", gap: 1 }}>
+            <Box
+              component="img"
+              src={logo}
+              sx={{ height: 35, width: 35 }}
+            ></Box>
+            <Typography variant="h6">Soundwave</Typography>
+          </Box>
+        </Link>
         <Box component="nav">{drawer}</Box>
       </Toolbar>
     </>
