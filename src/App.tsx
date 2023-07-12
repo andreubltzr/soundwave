@@ -2,11 +2,11 @@ import { CssBaseline } from "@mui/material";
 import { Header } from "./components/Header";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./App.css";
-import { Hero } from "./components/Hero";
+import { Hero } from "./pages/Hero";
 import { Footer } from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
-import { Discover } from "./components/Discover";
-import { Join } from "./components/Join";
+import { Discover } from "./pages/Discover";
+import { Join } from "./pages/Join";
 
 function App() {
   const theme = createTheme({

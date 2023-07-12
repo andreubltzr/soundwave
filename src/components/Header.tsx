@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const navItems = ["Discover", "Join"];
 
 export const Header = () => {
-  const drawer = (
+  const navLinks = (
     <List sx={{ display: "flex", gap: 1 }}>
       {navItems.map((item) => (
         <ListItem key={item} sx={{ p: 1 }}>
@@ -56,7 +56,7 @@ export const Header = () => {
             <Typography variant="h6">Soundwave</Typography>
           </Box>
         </Link>
-        <Box component="nav">{drawer}</Box>
+        <Box component="nav">{navLinks}</Box>
       </Toolbar>
     </>
   );
