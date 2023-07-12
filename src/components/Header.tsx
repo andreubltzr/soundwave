@@ -13,10 +13,17 @@ const navItems = ["Discover", "Join"];
 
 export const Header = () => {
   const navLinks = (
-    <List sx={{ display: "flex", gap: 1 }}>
+    <List sx={{ display: "flex" }}>
       {navItems.map((item) => (
-        <ListItem key={item} sx={{ p: 1 }}>
-          <ListItemButton disableRipple sx={{ p: 0 }}>
+        <ListItem key={item} sx={{ p: 0.5 }}>
+          <ListItemButton
+            disableRipple
+            sx={{
+              p: 0.5,
+              borderRadius: 1,
+              ":hover": { bgcolor: "#202027" },
+            }}
+          >
             <Link
               to={`/${item}`}
               style={{
