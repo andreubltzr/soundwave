@@ -23,9 +23,9 @@ export const Discover = () => {
           height: "90vh",
           px: "1.5rem",
           display: "flex",
-          flexDirection: { xs: "column", md: "row" },
+          flexDirection: { xs: "column", sm: "row" },
           justifyContent: { xs: "space-evenly", md: "center" },
-          alignItems: { md: "center" },
+          alignItems: { sm: "center" },
           gap: { md: 5 },
         }}
       >
