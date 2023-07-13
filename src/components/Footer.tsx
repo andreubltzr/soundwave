@@ -10,17 +10,23 @@ export const Footer = () => {
         maxWidth={false}
         sx={{
           bgcolor: "#202027",
-          px: "1.5rem",
+          px: { xs: "1.5rem", lg: "15rem" },
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
           gap: 5,
         }}
       >
-        <Box sx={{ display: "flex", gap: 2, textAlign: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            alignItems: "center",
+          }}
+        >
           <Typography>About Us</Typography>
           <Typography>Contact</Typography>
         </Box>
-        <Grid container sx={{ textAlign: "center" }}>
+        <Grid container sx={{ textAlign: "center", width: 200 }}>
           <Grid item xs={6}>
             <TwitterIcon sx={{ width: 20 }}></TwitterIcon>
           </Grid>

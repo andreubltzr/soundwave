@@ -12,7 +12,7 @@ export const Hero = () => {
           height: "90vh",
           display: "flex",
           justifyContent: { md: "center" },
-          px: "1.5rem",
+          px: { xs: "1.5rem" },
         }}
       >
         <Box className="circle circle-red"></Box>

@@ -47,7 +47,7 @@ export const Header = () => {
           justifyContent: "space-between",
           bgcolor: "#2F303A",
           height: "10vh",
-          px: "1.5rem",
+          px: { xs: "1.5rem", lg: "15rem" },
         }}
       >
         <Link
