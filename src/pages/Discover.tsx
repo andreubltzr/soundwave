@@ -23,46 +23,52 @@ export const Discover = () => {
           height: "90vh",
           px: "1.5rem",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-evenly",
-          alignItems: { sm: "center" },
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: { xs: "space-evenly", md: "center" },
+          alignItems: { md: "center" },
+          gap: { md: 5 },
         }}
       >
-        <Typography variant="h3">Discover new music</Typography>
-        <Box sx={{ display: "flex", gap: 1.5 }}>
-          <Box sx={discoverItemStyle}>
-            <Box
-              component="img"
-              src={microphone}
-              sx={{ height: 30, width: 30, mb: 0.6 }}
-            />
-            <Typography>Charts</Typography>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <Typography variant="h3">Discover new music</Typography>
+          <Box sx={{ display: "flex", gap: 1.5 }}>
+            <Box sx={discoverItemStyle}>
+              <Box
+                component="img"
+                src={microphone}
+                sx={{ height: 30, width: 30, mb: 0.6 }}
+              />
+              <Typography>Charts</Typography>
+            </Box>
+            <Box sx={discoverItemStyle}>
+              <Box
+                component="img"
+                src={albums}
+                sx={{ height: 30, width: 30, mb: 0.6 }}
+              />
+              <Typography>Albums</Typography>
+            </Box>
+            <Box sx={discoverItemStyle}>
+              <Box
+                component="img"
+                src={more}
+                sx={{ height: 30, width: 30, mb: 0.6 }}
+              />
+              <Typography>More</Typography>
+            </Box>
           </Box>
-          <Box sx={discoverItemStyle}>
-            <Box
-              component="img"
-              src={albums}
-              sx={{ height: 30, width: 30, mb: 0.6 }}
-            />
-            <Typography>Albums</Typography>
-          </Box>
-          <Box sx={discoverItemStyle}>
-            <Box
-              component="img"
-              src={more}
-              sx={{ height: 30, width: 30, mb: 0.6 }}
-            />
-            <Typography>More</Typography>
-          </Box>
+          <Typography>
+            By joining you can benefir by listening to the latest albums
+            released.
+          </Typography>
         </Box>
-        <Typography>
-          By joining you can benefir by listening to the latest albums released.
-        </Typography>
-        <Box
-          component="img"
-          src={covers}
-          sx={{ height: 250, width: 250, mx: "auto" }}
-        ></Box>
+        <Box>
+          <Box
+            component="img"
+            src={covers}
+            sx={{ height: 250, width: 250 }}
+          ></Box>
+        </Box>
       </Container>
     </>
   );
