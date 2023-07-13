@@ -35,7 +35,7 @@ export const Join = () => {
         }}
       >
         <Typography variant="h3" fontWeight="bold">
-          Join the{" "}
+          Join the&nbsp;
           <Typography
             component="span"
             variant="h3"
