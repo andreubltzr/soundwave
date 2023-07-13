@@ -11,10 +11,7 @@ export const Hero = () => {
           bgcolor: "#2F303A",
           height: "90vh",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: { xs: "center" },
-          alignItems: { sm: "center" },
-          gap: "1rem",
+          justifyContent: { md: "center" },
           px: "1.5rem",
         }}
       >
@@ -24,22 +21,35 @@ export const Hero = () => {
         <Box
           component="img"
           src={landingPageImg}
-          sx={{ display: { xs: "none" } }}
-        />
-        <Typography variant="h1" fontSize={50}>
-          Feel the music
-        </Typography>
-        <Typography>Stream over 20 thousand songs with one click</Typography>
-        <Button
-          variant="contained"
           sx={{
-            width: 100,
-            fontSize: "0.8rem",
-            textTransform: "none",
+            display: { xs: "none", sm: "block" },
+            zIndex: 1,
+          }}
+        />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: { xs: "center" },
+            gap: "1rem",
+            zIndex: 1,
           }}
         >
-          Join Now
-        </Button>
+          <Typography variant="h1" fontSize={50}>
+            Feel the music
+          </Typography>
+          <Typography>Stream over 20 thousand songs with one click</Typography>
+          <Button
+            variant="contained"
+            sx={{
+              width: 100,
+              fontSize: "0.8rem",
+              textTransform: "none",
+            }}
+          >
+            Join Now
+          </Button>
+        </Box>
       </Container>
     </>
   );

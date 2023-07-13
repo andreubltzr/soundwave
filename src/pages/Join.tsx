@@ -29,12 +29,13 @@ export const Join = () => {
           px: "1.5rem",
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
-          justifyContent: "space-evenly",
+          justifyContent: { xs: "space-evenly", md: "center" },
           alignItems: { sm: "center" },
+          gap: { md: 15 },
         }}
       >
         <Typography variant="h3" fontWeight="bold">
-          Join the <br />
+          Join the{" "}
           <Typography
             component="span"
             variant="h3"
