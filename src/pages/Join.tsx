@@ -22,13 +22,15 @@ export const Join = () => {
   return (
     <>
       <Container
+        maxWidth={false}
         sx={{
           bgcolor: "#2F303A",
           height: "90vh",
           px: "1.5rem",
           display: "flex",
-          flexDirection: "column",
+          flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-evenly",
+          alignItems: { sm: "center" },
         }}
       >
         <Typography variant="h3" fontWeight="bold">
@@ -52,6 +54,7 @@ export const Join = () => {
             display: "flex",
             flexDirection: "column",
             gap: 2.5,
+            maxWidth: "400px",
           }}
         >
           <FormGroup>

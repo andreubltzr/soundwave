@@ -7,6 +7,7 @@ export const Footer = () => {
   return (
     <>
       <Container
+        maxWidth={false}
         sx={{
           bgcolor: "#202027",
           px: "1.5rem",

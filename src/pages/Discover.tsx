@@ -17,6 +17,7 @@ export const Discover = () => {
   return (
     <>
       <Container
+        maxWidth={false}
         sx={{
           bgcolor: "#2F303A",
           height: "90vh",
@@ -24,6 +25,7 @@ export const Discover = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
+          alignItems: { sm: "center" },
         }}
       >
         <Typography variant="h3">Discover new music</Typography>
